@@ -38,6 +38,15 @@ module.exports = {
           presets: ['es2015'],
           plugins: ['transform-object-assign']
         },
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {},
+          },
+        ]
       }
     ],
   },
