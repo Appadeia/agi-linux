@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack -p",
+    "start": "webpack-dev-server"
   },
   "author": "",
   "license": "ISC",
@@ -25,9 +26,5 @@
     "sass-loader": "^7.1.0",
     "webpack": "^3.12.0",
     "webpack-dev-server": ">=3.1.11"
-  },
-  "scripts": {
-	"build": "webpack -p",
-	"start": "webpack-dev-server"
   }
 }
